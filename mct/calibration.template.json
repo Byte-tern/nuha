@@ -1,0 +1,13 @@
+{
+ "k1": 0.0,
+ "plan_size": [180, 440],
+ "cameras": {
+  "1": {"pairs": [], "ghost_polygons": [], "weight": 1.0},
+  "2": {"pairs": [], "ghost_polygons": [], "weight": 1.0},
+  "3": {"pairs": [], "ghost_polygons": [], "weight": 1.0},
+  "4": {"pairs": [], "ghost_polygons": [], "weight": 1.0},
+  "5": {"pairs": [], "ghost_polygons": [], "weight": 1.0}
+ },
+ "walkable": [],
+ "obstacles": []
+}
