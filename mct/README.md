@@ -53,7 +53,7 @@ python evaluate.py --result fusion_result.pkl --dump-frames clip1 --from 1500 --
 
 User device:
 
-git clone https://github.com/Byte-tern/nuha.git
+git clone https://github.com/Byte-tern/nuha
 
 8. Описание решения
 
