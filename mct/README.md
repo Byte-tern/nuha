@@ -36,7 +36,12 @@ python fusion.py --inp local_tracks.pkl --out fusion_result.pkl
 
 python app.py --root . --result fusion_result.pkl --plan officePlan.jpg
 
-6. Настройка качества
+6. Оценка
+
+python evaluate.py --result fusion_result.pkl --calib calibration.json - прогон оценки без разметки
+python evaluate.py --result fusion_result.pkl --dump-frames clip1 --from 1500 --to 3000 --every 25 --root . - разметить эталон
+
+7. Настройка качества
 
 - Ошибки определения fps: `--fps-override 3:15`. На разметке `--target-fps` указывает желаемое fps каждой камеры, по умолчанию медиана
 - Далёкие люди не детектируются: `calibrate.py zoom --imgsz 1600 --conf 0.1`.
@@ -44,7 +49,7 @@ python app.py --root . --result fusion_result.pkl --plan officePlan.jpg
 - Два разных человека склеились: уменьшить `--k-gate`, `--k-merge`, `--r0`.
 - Остальные параметры - редактировать класс `P` в `fusion.py`.
 
-7. GitHub
+8. GitHub
 
 User device:
 
